@@ -1,0 +1,1416 @@
+body {
+	width: 100%;
+     white-space: normal;
+     margin: 0 auto;
+      position: relative;
+      text-align: center;
+      
+overflow-x: none;
+	
+}
+
+/*Navigation CSS-----------------*/
+
+
+.rmm {
+  display:block;
+  position:relative;
+  width:100%;
+  padding:0px;
+  margin:0 auto !important;
+  text-align: center;
+  line-height:19px !important;
+}
+.rmm * {
+  -webkit-tap-highlight-color:transparent !important;
+  font-family:Arial;
+}
+.rmm a {
+  color:#ebebeb;
+  text-decoration:none;
+}
+
+.rmm li a {
+  color: #4D4C4C;
+  border-left: 0px !important;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2em !important;
+
+}
+.rmm .rmm-main-list, .rmm .rmm-main-list li {
+  margin:0px;
+  padding:0px;
+}
+.rmm ul {
+  display:block;
+  width:auto !important;
+  margin:0 auto !important;
+  overflow:hidden;
+  list-style:none;
+}
+
+
+/* sublevel menu - in construction */
+.rmm ul li ul, .rmm ul li ul li, .rmm ul li ul li a {
+  display:none !important;
+  height:0px !important;
+  width:0px !important;
+}
+/* */
+
+
+.rmm .rmm-main-list li {
+  display:inline;
+  padding:padding:0px;
+  margin:0px !important;
+}
+.rmm-toggled {
+  display:none;
+  width:100%;
+  position:relative;
+  overflow:hidden;
+  margin:0 auto !important;
+}
+.rmm-button:hover {
+  cursor:pointer;
+}
+.rmm .rmm-toggled ul {
+  display:none;
+  margin:0px !important;
+  padding:0px !important;
+}
+.rmm .rmm-toggled ul li {
+  display:block;
+  margin:0 auto !important;
+}
+
+
+
+
+/* GRAPHITE STYLE */
+
+.rmm.graphite .rmm-main-list li a {
+  display:inline-block;
+  padding:8px 30px 8px 30px;
+  margin:0px -3px 0px -3px;
+  font-size:15px;
+  text-shadow:1px 1px 1px #333333;
+  
+  border-left:1px solid #555555;
+  
+  
+}
+.rmm.graphite .rmm-main-list li a:hover {
+  background-image:url('../rmm-img/graphite-menu-bg-hover.png');
+}
+.rmm.graphite .rmm-main-list li:first-child a {
+-webkit-border-top-left-radius: 6px;
+-webkit-border-bottom-left-radius: 6px;
+-moz-border-radius-topleft: 6px;
+-moz-border-radius-bottomleft: 6px;
+border-top-left-radius: 6px;
+border-bottom-left-radius: 6px;
+}
+.rmm.graphite .rmm-main-list li:last-child a {
+  -webkit-border-top-right-radius: 6px;
+-webkit-border-bottom-right-radius: 6px;
+-moz-border-radius-topright: 6px;
+-moz-border-radius-bottomright: 6px;
+border-top-right-radius: 6px;
+border-bottom-right-radius: 6px;
+}
+.rmm.graphite .rmm-toggled {
+  width:95%;
+  background-color:#555555;
+  min-height:36px;
+  border-radius:6px;
+}
+.rmm.graphite .rmm-toggled-controls {
+  display:block;
+  height:36px;
+  color:white;
+  text-align:left;
+  position:relative;
+  background-image:url('../rmm-img/graphite-menu-bg.png');
+  background-repeat:repeat-x;
+  border-radius:6px;
+}
+.rmm.graphite .rmm-toggled-title {
+  position:relative;
+  top:9px;
+  left:15px;
+  font-size:16px;
+  color:white;
+  text-shadow:1px 1px 1px black;
+}
+.rmm.graphite .rmm-button {
+  display:block;
+  position:absolute;
+  right:15px;
+  top:8px;
+}
+
+.rmm.graphite .rmm-button span {
+  display:block;
+  margin-top:4px;
+  height:2px;
+  background:white;
+  width:24px;
+}
+.rmm.graphite .rmm-toggled ul li a {
+  display:block;
+  width:100%;
+  background-color:#555555;
+  text-align:center;
+  padding:10px 0px 10px 0px;
+  border-bottom:1px solid #333333;
+  border-top:1px solid #777777;
+  text-shadow:1px 1px 1px #333333;
+}
+.rmm.graphite .rmm-toggled ul li a:active {
+  background-color:#444444;
+  border-bottom:1px solid #444444;
+  border-top:1px solid #444444;
+}
+
+
+
+
+
+/* MINIMAL STYLE */
+
+.rmm.minimal a {
+  color:#333333;
+}
+.rmm.minimal a:hover {
+  opacity:0.7;
+}
+.rmm.minimal .rmm-main-list li a {
+  display:inline-block;
+  padding:8px 30px 8px 30px;
+  margin:0px -3px 0px -3px;
+  font-size:15px;
+}
+.rmm.minimal .rmm-toggled {
+  width:95%;
+  min-height:36px;
+}
+.rmm.minimal .rmm-toggled-controls {
+  display:block;
+  height:36px;
+  color:#333333;
+  text-align:left;
+  position:relative;
+}
+.rmm.minimal .rmm-toggled-title {
+  position:relative;
+  top:9px;
+  left:9px;
+  font-size:16px;
+  color:#33333;
+}
+.rmm.minimal .rmm-button {
+  display:block;
+  position:absolute;
+  right:9px;
+  top:7px;
+}
+
+.rmm.minimal .rmm-button span {
+  display:block;
+  margin:4px 0px 4px 0px;
+  height:2px;
+  background:#333333;
+  width:25px;
+}
+.rmm.minimal .rmm-toggled ul li a {
+  display:block;
+  width:100%;
+  text-align:center;
+  padding:10px 0px 10px 0px;
+  border-bottom:1px solid #dedede;
+  color:#333333;
+}
+.rmm.minimal .rmm-toggled ul li:first-child a {
+  border-top:1px solid #dedede;
+}
+
+
+
+.navbar #team_message {
+  width: 100%;
+  margin: auto;
+  position: relative;
+  padding-top: 25px;
+}
+
+.navbar #team_message p {
+  font-size: 2em;
+  font-family: 'Lato', sans-serif;
+  text-shadow: 1.5px 1.5px 2.5px gray;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+.navbar #credit_card {
+  float: right;
+  position: relative;
+  margin-right: 15px;
+  margin-top: -45px;
+}
+
+.navbar #credit_card img {
+  width: 65px;
+}
+
+.navbar #free_estimates {
+  float: left;
+  position: absolute;
+  margin-left: 15px;
+  margin-top: -30px;
+}
+
+#free_estimates p .glyphicon {
+	padding-left: 10px;
+}
+
+#free_estimates p  {
+  font-size: 1.5em;
+  font-family: 'Lato', sans-serif;
+  text-shadow: 1px 1px 1px gray;
+}
+
+span .fb-share {
+	width: 65px;
+	position: absolute;
+}
+
+/*Home CSS-------------*/
+
+
+.jumbotron {
+   background-image: url("about_body_background.jpg");
+
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    color: white;
+}
+
+#jumbo:hover {
+	text-decoration: none;
+}
+
+
+.jumbotron h1 {
+	font-size: 11em !important;
+	margin: auto;
+	color: white !important;
+	font-family: 'Kaushan Script', cursive;
+	text-shadow: 5px 5px 5px black;
+	padding-top: 1.5em;
+    padding-bottom: 1em;
+	width: 100%;
+	font-weight: bold;
+}
+
+.jumbotron p {
+  display: none;
+  color: white;
+  padding-top: 25px;
+  text-shadow: 2px 2px 2px black;
+  font-family: sans-serif, helvetica;
+  letter-spacing: 2px;
+}
+
+.jumbotron p:hover {
+	text-decoration: none;
+}
+
+#number_message {
+  height: 350px;
+}
+
+.wrapper {
+	width: 100%;
+	margin: auto;
+}
+
+#glass_replace {
+	width: 100%;
+	height: 105px;
+	margin-bottom: 20px;
+}
+
+#glass_replace p {
+	color: #262526;
+	font-size: 2.5em;
+	margin: auto;
+	padding-top: 10px;
+	font-family: 'Cinzel Decorative', cursive;
+}
+
+#phone_number {
+  border-top: 5px double black;
+    background-color: #1f2324;
+    border-bottom: 5px double black;
+}
+
+#phone_number p {
+	color: #dedede;
+	font-size: 9em;
+	text-shadow: 3px 3px 3px gray;
+	font-family: 'Lato', sans-serif;
+	letter-spacing: 2px;
+}
+
+#list_header {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: -1em;
+  background: white;
+  border-bottom: 3px solid #212121;
+}
+
+#list_header p {
+  color: black;
+  font-family: sans-serif, helvetica;
+  font-size: 4em;
+  text-shadow: 2px 2px 2px black;
+  letter-spacing: 2px;
+}
+
+.features_list_main {
+background: white;
+  height: 900px;
+ font-family: sans-serif, helvetica;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.features_list_sub {
+ background-image: url("features_window_background.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    margin: auto;
+    width: 100%;
+}
+
+.features_list_sub #features_header {
+  padding-top: 175px;
+  font-size: 6em;
+  font-family: 'Cinzel Decorative', cursive;
+  text-decoration: underline;
+  margin: auto;
+  text-shadow: 3px 3px 3px gray;
+}
+
+.features_list_sub .features_details {
+  font-size: 2em;
+  line-height: 3em;
+  font-style: italic;
+  font-family: 'Lato', sans-serif;
+  text-shadow: 1px 1px 1px gray;
+  margin: auto;
+ 
+}
+
+.symptom_question {
+	width: 100%;
+    border-top: 3px double #212121;
+}
+
+.symptom_question p {
+	font-size: 5em;
+	color: black;
+	text-shadow: 2px 2px 2px black;
+	font-family: 'Lato', sans-serif;
+	letter-spacing: 2px;
+    margin-top: 1em;
+}
+
+.symptom_question img {
+	width: 300px;
+	margin-top: -60px;
+	margin-left: -70px;
+	
+}
+
+.window_symptoms table {
+	margin: auto;
+    box-shadow: 3px 2px 1px #212121;
+}
+
+.window_symptoms table td {
+	padding: 125px;
+	border: 5px double black;
+	color: black;
+	text-shadow: 2px 2px 2px gray;
+	font-family: 'Lato', sans-serif;
+	font-size: 2em;
+	background: white;
+
+}
+
+.window_symptoms table #seal_fail:hover {
+	background-image: url("seal_fail.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.window_symptoms table #strip_fail:hover {
+	background-image: url("strip_fail.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.window_symptoms table #window_fall:hover {
+	background-image: url("window_fall.jpg");
+
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.window_symptoms table #moisture:hover {
+	background-image: url("moist_glass.jpg");
+
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#mobile_seal_fail, #mobile_strip_fail, #mobile_window_fall, #mobile_moisture {
+	display: none;
+	margin: auto;
+	margin-bottom: 25px;
+}
+
+#lower_message {
+  background: #1f2324;
+}
+
+#lower_message img {
+  width: 250px;
+  margin-top: 25px;
+}
+
+#parts {
+	margin-top: 80px;
+    border-top: 3px solid #212121;
+}
+
+#parts p {
+	font-size: 3em;
+	color: #dedede;
+	text-shadow: 2px 2px 2px black;
+	font-family: 'Lato', sans-serif;
+	letter-spacing: 2px;
+    padding-top: 1em;
+}
+
+#manufacturer {
+	margin-top: 50px;
+	padding-bottom: 50px;
+}
+
+#manufacturer p {
+	font-size: 1.5em;
+	color: #dedede;
+	text-shadow: 2px 2px 2px black;
+	font-family: 'Lato', sans-serif;
+	letter-spacing: 2px;
+}
+
+footer {
+  border-top: 3px double black;
+}
+
+#foot_phone_number, #foot_credit_card {
+	display: none;
+}
+
+#foot_phone_number {
+	float: left;
+}
+
+#foot_credit_card {
+	float: right;
+}
+
+#foot_credit_card img {
+	width: 65px;
+}
+
+#foot_phone_number{
+	margin-top: 15px;
+	margin-left: 5px;
+}
+
+#foot_phone_number p {
+	font-size: 1.5em;
+	text-shadow: 1px 1px 1px gray;
+}
+
+ #foot_credit_card {
+ 	margin-top: 10px;
+ 	margin-right: 5px;
+ }
+
+ #foot_credit_card #foot_fb {
+ 	padding-bottom: 100px;
+ }
+
+/*About CSS------------*/
+
+
+
+#about_body {
+	background: #E2E3E1;
+    width: 100%;
+     white-space: normal;
+     margin: 0 auto;
+      position: relative;
+      text-align: center;
+      
+overflow-x: none;
+}
+
+#about_heading {
+	margin: auto;
+	margin-top: 175px;
+	font-size: 6em;
+	font-family: 'Great Vibes', cursive;
+	text-decoration: underline;
+	color: #4D4C4C;
+	text-shadow: 1.5px 1.5px 1.5px black;
+    letter-spacing: .05em;
+}
+
+.about_paragraph {
+	margin: auto;
+	margin-top: 50px;
+	border: 10px ridge #4D4C4C;
+    border-radius: 10px;
+	width: 70em;
+	margin-bottom: 50px;
+	background-color: #E0E0E0;
+}
+
+.about_paragraph p{
+	font-size: 2em;
+	margin: auto;
+	font-family: 'Lato', sans-serif;
+	color: #404040;
+	text-shadow: 1px 1px 1px gray;
+	padding-top: 40px;
+	padding-bottom: 20px;
+	width: 100%;
+	line-height: 50px;
+    padding-left: .5em;
+    padding-right: .5em;
+}
+
+#about_second_paragraph {
+	padding-bottom: 40px;
+}
+
+#about_phone_number, #about_credit_card {
+	display: none;
+}
+
+#about_phone_number {
+	float: left;
+}
+
+#about_credit_card {
+	float: right;
+}
+
+#about_credit_card img {
+	width: 65px;
+}
+
+#about_phone_number{
+	margin-top: 15px;
+	margin-left: 5px;
+}
+
+#about_phone_number p {
+	font-size: 1.5em;
+	text-shadow: 1px 1px 1px gray;
+}
+
+ #about_credit_card {
+ 	margin-top: 10px;
+ 	margin-right: 5px;
+ }
+
+ #about_footer {
+ 	border-top: 3px double white;
+ }
+
+ #about_footer p {
+ 	color: black;
+ }
+
+ #square_logo {
+ 	margin: auto;
+ 	background: white;
+ 	width: 10%;
+ 	margin-bottom: 25px;
+ 	border-radius: 100px;
+ }
+
+ #square_logo img {
+ 	width: 125px;
+ }
+
+
+
+ /*Gallery CSS-----------------*/
+
+ #gallery_body {
+  overflow-x: hidden;
+  background: #E2E3E1;
+ }
+
+ .gallery_header {
+ 	margin-top: 12.5em;
+ 	margin-bottom: 1.5em;
+ }
+
+ .gallery_header h1 {
+ 	font-size: 7em;
+     font-weight: bold;
+ 	font-family: 'Great Vibes', cursive;
+ }
+
+
+#temp_gallery_heading p {
+	margin-top: 1.5em;
+    margin-bottom: 1.5em;
+	font-size: 2em;
+}
+
+.image_gallery {
+	width: 70em;
+	margin: auto;
+	margin-bottom: 100px;
+}
+
+.image_gallery a img {
+	width: 400px;
+  padding: 10px;
+}
+
+.fancybox-thumb {
+  width: 700px;
+}
+
+
+/*Testimonials CSS---------------------*/
+
+#testimonial_body {
+  background: #E2E3E1;
+}
+
+#test_temp_heading {
+width: 70em;
+margin: auto;
+}
+
+#test_temp_heading h1 {
+    margin-top: 2.5em;
+  margin-bottom: 1em;
+  font-size: 5em;
+  font-family: 'Great Vibes', cursive;
+  letter-spacing: .05em;
+    text-decoration: underline;
+}
+
+#test_temp_heading p {
+	font-size: 1.5em;
+  margin-bottom: 3em;;
+}
+
+.test-container {
+    width: 65em;
+    margin: auto;
+    border: 2px double #212121;
+    border-radius: 10px;
+}
+
+.test-container p {
+    text-align: left;
+    padding: 2em .5em 2em .5em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    width: 95%;
+    font-size: 1.5em;
+    font-family: 'Arvo', serif;
+}
+
+.test-container p .test-source {
+    float: right;
+    font-weight: bold;
+}
+
+.test-container #first-test, .test-container #third-test {
+    background: white;
+}
+
+#email {
+    margin: auto;
+    margin-top: 2.5em;
+}
+
+#email p {
+	font-size: 2em;
+	font-family: 'Lato', sans-serif;
+}
+
+
+
+
+/*-------------START OF MEDIA CSS-------------------*/
+
+
+@media screen and (min-width: 1070px) and (max-width: 1400px) {
+	#list_header p {
+		font-size: 3em;
+	}
+
+	.jumbotron h1 {
+		font-size: 10em !important;
+		padding-top: 125px;
+	}
+
+	.jumbotron {
+		height: 450px;
+	}
+
+	#glass_replace {
+		height: 85px;
+	}
+
+	#glass_replace p {
+		font-size: 2em;
+	}
+
+	#number_message {
+		height: 300px;
+	}
+
+	.features_list_main {
+		height: 800px;
+	}
+
+	.features_list_sub {
+		background-size: 100%;
+	}
+
+	.features_list_sub #features_header {
+		padding-top: 125px;
+	}
+}
+
+@media screen and (min-width: 300px) and (max-width: 1200px) {
+
+	.navbar li a {
+		color: white !important;
+	}
+	#glass_replace p {
+		font-size: 1.5em;
+	}
+
+	#glass_replace {
+		height: 65px;
+	}
+
+	.jumbotron {
+		height: 350px;
+	}
+
+	.jumbotron p {
+		display: block !important;
+		font-size: 2em !important;
+        position: relative;
+        margin-top: -3.25em;
+        text-shadow: 1.5px 1.5px 1.5px white;
+	}
+
+	.jumbotron h1 {
+		font-size: 8em !important;
+		padding-top: 75px;
+        position: relative;
+	}
+
+	#phone_number p {
+		font-size: 7em;
+	}
+
+	#number_message {
+		height: 225px;
+	}
+
+	#list_header p {
+		font-size: 2.5em;
+	}
+
+	#team_message p {
+		display: none;
+	}
+
+	#credit_card {
+		display: none;
+	}
+
+	#free_estimates {
+		display: none;
+	}
+
+	.navbar {
+		height: 35px;
+		background-color: #555555 !important;
+	}
+    
+    .window_symptoms table td {
+        font-size: 1.5em;
+    }
+
+	.window_symptoms table #seal_fail {
+	background-image: url("seal_fail.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    text-shadow: 1.5px 1.5px 1.5px white;
+}
+
+.window_symptoms table #strip_fail {
+	background-image: url("strip_fail.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    text-shadow: 1.5px 1.5px 1.5px white;
+}
+
+.window_symptoms table #window_fall {
+	background-image: url("window_fall.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    text-shadow: 1.5px 1.5px 1.5px white;
+}
+
+.window_symptoms table #moisture {
+	background-image: url("moist_glass.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    text-shadow: 1.5px 1.5px 1.5px white;
+}
+
+#foot_phone_number, #foot_credit_card {
+	display: block;
+}
+
+.features_list_main {
+	height: 700px;
+}
+
+.features_list_sub #features_header {
+	padding-top: 100px;
+	font-size: 4em;
+}
+
+.features_list_sub .features_details {
+	font-size: 1.7em;
+}
+
+/*About Media CSS For This Resolution Range-------------------*/
+
+#about_heading {
+	margin-top: 100px;
+}
+
+.about_paragraph {
+	width: 90%;
+}
+
+#about_phone_number, #about_credit_card {
+	display: block;
+}
+
+/*Testimonials Media CSS For This Resolution Range----------------*/
+
+#test_temp_heading {
+	margin-top: 75px;
+}
+}
+
+
+
+
+@media screen and (min-width: 200px) and (max-width: 1150px) {
+	
+
+	.jumbotron h1 {
+		font-size: 6.5em !important;
+	}
+
+	#phone_number p {
+		font-size: 5.5em;
+	}
+
+	#list_header p {
+		font-size: 2em;
+	}
+	.features_list_main {
+		height: 600px;
+	}
+
+	.window_symptoms table td {
+		padding: 75px;
+	}
+
+	.window_symptoms table #seal_fail {
+	background-image: url("seal_fail.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.window_symptoms table #strip_fail {
+	background-image: url("strip_fail.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.window_symptoms table #window_fall {
+	background-image: url("window_fall.jpg");
+
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.window_symptoms table #moisture {
+	background-image: url("moist_glass.jpg");
+
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.symptom_question p {
+	font-size: 3.5em;
+    margin-bottom: .75em;
+}
+
+.symptom_question img {
+	display: none;
+}
+
+.features_list_sub {
+	background-size: cover !important;
+}
+
+}
+
+@media screen and (min-width: 200px) and (max-width: 1000px) {
+    
+#test_temp_heading {
+    width: 100%;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+}
+@media screen and (min-width: 100px) and (max-width: 980px) {
+    
+/*------------Home Media CSS For This Resolution Range-------------*/
+
+	.features_list_sub {
+		background-image: none;
+	}
+
+	.features_list_sub #features_header {
+		padding-top: 50px;
+	}
+
+	.features_list_sub .features_details {
+		border: 3px double black;
+	}
+    
+/*---------------About Media CSS For This Resolution Range-------------*/
+
+#about_heading {
+    font-size: 5em;
+}
+    
+.about_paragraph {
+    width: 100%;
+    margin: auto;
+    border: 0;
+}
+    
+.about_paragraph p {
+    text-align: left;
+}
+}
+
+@media screen and (min-width: 200px) and (max-width: 975px) {
+    .image_gallery {
+        width: 100%;
+        padding-right: .5em;
+        padding-left: .5em;
+}
+}
+    
+@media screen and (min-width: 200px) and (max-width: 945px) {
+
+.test-container {
+    width: 100%;
+    border: 0;
+}
+
+@media screen and (min-width: 200px) and (max-width: 845px) {
+    
+#about_heading {
+    font-size: 3.5em;
+}
+    
+.about_paragraph p {
+    font-size: 1.5em;
+}
+}
+
+@media screen and (min-width: 200px) and (max-width: 750px) {
+
+	.navbar ul li {
+		margin-right: 50px;
+		margin-left: 50px;
+		padding-top: 15px;
+	}
+
+	.navbar ul li a {
+		font-size: 1.5em;
+	}
+	.jumbotron h1 {
+		font-size: 5em !important;
+	}
+
+	#phone_number p {
+		font-size: 4.5em;
+	}
+
+	#parts p {
+		font-size: 3em;
+	}
+
+	#manufacturer p {
+		font-size: 2em;
+	}
+
+	.jumbotron p {
+		font-size: 1.5em !important;
+	}
+
+	.jumbotron {
+		height: 300px !important;
+	}
+}
+    
+@media screen and (min-width: 100px) and (max-width: 635px) {
+    #test_temp_heading h1 {
+        text-decoration: none;
+    }
+}
+
+@media screen and (min-width: 100px) and (max-width: 620px) {
+	
+
+	#phone_number p {
+		font-size: 3.5em;
+	}
+
+	#number_message {
+		height: 200px;
+	}
+
+	.symptom_question p {
+		font-size: 3em;
+		padding-bottom: 1em;
+        padding-top: 1em;
+	}
+
+	/*About Media CSS For This Resolution Range--------------------*/
+
+
+	.about_paragraph {
+		width: 100%;
+	}
+
+	.about_paragraph p {
+		font-size: 1.2em;
+	}
+
+	#about_heading {
+		font-size: 2.5em;
+	}
+
+
+
+	/*Gallery Media CSS For This Restolution Range------------------*/
+
+	.image_gallery {
+		width: 100%;
+	}
+
+	#temp_gallery_heading p {
+		font-size: 2em;
+	}
+
+	/*Testimonials Media CSS For This Resolution Range---------------*/
+
+	#test_temp_heading p {
+		border-bottom: 2px solid #212121;
+        padding-bottom: 2.5em;
+	}
+}
+
+@media screen and (min-width: 100px) and (max-width: 561px) {
+	.navbar ul li a {
+		font-size: 1em;
+	}
+
+	.navbar ul li {
+		padding-top: 20px;
+		margin-left: 5px;
+	}
+
+	.jumbotron h1 {
+		font-size: 3.5em !important;
+	}
+
+	.jumbotron p {
+		font-size: 1em !important;
+		text-shadow: 3px 3px 3px black;
+	}
+
+	.jumbotron {
+		height: 250px !important;
+	}
+
+	.features_list_main {
+		height: 450px;
+	}
+
+	.features_list_main #features_header {
+		padding-top: 25px;
+	}
+
+	.features_list_sub .features_details {
+		font-size: 1.2em;
+	}
+
+	#features_list_a #offering {
+		font-size: 3.5em !important;
+	}
+
+	.symptom_question img {
+		display: none;
+	}
+
+	#number_message {
+		height: 175px;
+	}
+
+	.window_symptoms {
+		display: none;
+	}
+
+	#mobile_seal_fail, #mobile_strip_fail, #mobile_window_fall, #mobile_moisture {
+	display: block;
+	width: 100%;
+	border-top: 3px solid white;
+	border-bottom: 3px solid white;
+}
+
+	#mobile_seal_fail img, #mobile_strip_fail img, #mobile_window_fall img, #mobile_moisture img {
+		width: 100%;
+	}
+
+	#glass_replace p {
+		font-size: 1.2em;
+	}
+
+	#phone_number p {
+		font-size: 2.8em;
+	}
+
+	#number_message {
+		height: 150px;
+	}
+
+	.symptom_question p {
+		font-size: 2em;
+	}
+
+	#parts p {
+		font-size: 2em;
+		padding-top: 10px;
+	}
+
+	#manufacturer p {
+		font-size: 1.5em;
+	}
+
+	footer #home_copyright {
+		display: none;
+	}
+
+	
+
+	/*About Media CSS For This Resolution Range-----------------------*/
+
+	#about_footer #about_copyright {
+		display: none;
+	}
+
+	/*Testimonials Media CSS For This Resolution Range-----------------*/
+
+	#email p  {
+		font-size: 1.5em;
+	}
+
+} 
+
+@media screen and (min-width: 100px) and (max-width: 425px) {
+
+	#phone_number p {
+		font-size: 2em;
+	}
+
+	#list_header p {
+		font-size: 1.5em;
+	}
+
+	.jumbotron h1 {
+		font-size: 2.5em !important;
+	}
+
+	.navbar ul li a {
+		font-size: .7em;
+	}
+
+	.symptom_question p {
+		font-size: 1.5em;
+	}
+
+	#glass_replace p {
+		font-size: 1em;
+	}
+
+	#foot_phone_number p {
+		font-size: 1em;
+	}
+
+	.features_list_main {
+		height: 350px;
+	}
+
+	.features_list_sub #features_header {
+		font-size: 3em;
+	}
+
+	.features_list_sub .features_details {
+		font-size: 1em;
+		font-weight: bold;
+	}
+
+	/*About Media CSS For This Resolution Range--------------------*/
+
+	#about_heading {
+		font-size: 2.5em;
+	}
+    
+/*-------------Gallery Media CSS For This Resolution Range------------*/
+    
+.image_gallery {
+    padding-left: 0;
+    padding-right: 0;
+}
+    
+.image_gallery a img {
+    padding: 2.5px 0px 2.5px 0px;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
